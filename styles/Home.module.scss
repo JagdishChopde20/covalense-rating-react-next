@@ -1,0 +1,106 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    background-image: radial-gradient(
+      farthest-side at 50% -10%,
+      #222933,
+      #1d242e,
+      #181e28
+    );
+    max-width: 384px;
+    max-height: 371px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px 1px;
+    border-radius: 16px;
+    padding: 28px 24px;
+
+    .logo {
+      height: 40px;
+      width: 40px;
+      background-color: var(--DarkBlue);
+      border-radius: 50%;
+      box-shadow: 0 0 2px 1.7px rgb(0 0 0 / 10%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .headingPrimary {
+      font-size: 3rem;
+      color: var(--White);
+      margin-top: 3rem;
+      margin-bottom: 0;
+    }
+
+    .para {
+      font-size: 1.5rem;
+      color: var(--MediumGrey);
+      margin-top: 1rem;
+    }
+
+    .checkGroup {
+      margin: 2.5rem 0;
+      input {
+        display: none;
+      }
+      display: flex;
+      justify-content: space-between;
+
+      .checkLabel {
+        height: 48px;
+        width: 48px;
+        background-color: var(--DarkBlue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        color: var(--MediumGrey);
+        cursor: pointer;
+        transition: all .3s;
+      }
+
+      input:hover + .checkLabel {
+        background-color: var(--Orange);
+        color: var(--White);
+      }
+
+      input:checked + .checkLabel {
+        background-color: var(--MediumGrey);
+        color: var(--White);
+      }
+    }
+
+    .btnSubmit {
+      width: 100%;
+      padding: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      color: var(--Orange);
+      background-color: var(--White);
+      font-family: inherit;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      transition: all .2s;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--White);
+        background-color: var(--Orange);
+      }
+      &:active {
+        transform: scale(.9);
+      }
+    }
+  }
+}

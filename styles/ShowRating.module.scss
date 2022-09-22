@@ -1,0 +1,50 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    background-image: radial-gradient(
+      farthest-side at 50% -10%,
+      #222933,
+      #1d242e,
+      #181e28
+    );
+    max-width: 336px;
+    max-height: 333px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px 1px;
+    border-radius: 16px;
+    padding: 25px 24px;
+    text-align: center;
+
+    .ratingBlock {
+        margin-top: 2.5rem;
+        background-color: var(--DarkBlue);
+        color: var(--Orange);
+        font-size: 1.5rem;
+        padding: 8px 0;
+        border-radius: 15px;
+    }
+
+    .headingSecondary {
+      font-size: 2.5rem;
+      color: var(--White);
+      margin-top: 2.5rem;
+      margin-bottom: 0;
+    }
+
+    .para {
+      font-size: 1.5rem;
+      color: var(--MediumGrey);
+      margin-top: 1rem;
+    }
+  }
+}
