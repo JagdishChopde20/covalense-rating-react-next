@@ -32,7 +32,7 @@ export default function ShowRating(props) {
                         <section>
                             <h2 className={styles.headingSecondary}>Thank you!</h2>
                             <p className={styles.para}>
-                                We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch.
+                                {"We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch."}
                             </p>
                         </section>
 
